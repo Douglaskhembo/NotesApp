@@ -1,68 +1,138 @@
 /* Container for the whole page */
-div {
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Styles for the notes section */
-  .notes-section {
-    margin-bottom: 2rem;
-  }
-  
-  .notes-section h2 {
-    color: #333;
-    font-size: 24px;
-  }
-  
-  /* Styles for individual notes - assuming your Note component has some container element */
-  .note {
-    background-color: #f9f9f9;
-    border-left: 5px solid #007bff;
-    margin: 10px 0;
-    padding: 10px 15px;
-    border-radius: 5px;
-  }
-  
-  /* Styles for the form section */
-  form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    margin: auto;
-  }
-  
-  form h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  form label {
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  
-  form input,
-  form textarea {
-    width: 100%;
-    padding: 8px;
-    margin: 8px 0 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  form input[type="submit"] {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  form input[type="submit"]:hover {
-    background-color: #0056b3;
-  }
+body {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Styles for the notes section */
+.notes-section {
+  margin-bottom: 2rem;
+}
+
+.notes-section h2 {
+  color: #333;
+  font-size: 24px;
+}
+
+/* Styles for individual notes - assuming your Note component has some container element */
+.note {
+  background-color: #f9f9f9;
+  border-left: 5px solid #007bff;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* Styles for the form section */
+.form-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: auto;
+}
+
+.form-section h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-section label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.form-section input,
+.form-section textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-section input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-section input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cancel-button {
+  background-color: #f44336; /* Red */
+  color: white;
+  border: none;
+  padding: 8px 16px; /* Adjusted padding */
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px; /* Adjust margin as needed */
+  transition: background-color 0.3s;
+}
+
+.cancel-button:hover {
+  background-color: #d32f2f; /* Darker red */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.create-button {
+  background-color: #2196F3; /* Blue */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px; /* Adjust margin as needed */
+  transition: background-color 0.3s;
+}
+
+.create-button:hover {
+  background-color: #0D47A1; /* Darker blue */
+}
+
+.logout-button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #388E3C; /* Darker green */
+}
